@@ -1,5 +1,8 @@
 def roll_call_dwarves(dwarf)
-%w(Doc Dopey Bashful Grumpy).each_with_index { |dwarf, index| }
+  hash = Hash.new
+%w("Dopey", "Grumpy", "Bashful").each_with_index { |dwarf, index| 
+hash[dwarf] = index 
+}
 end
 
 def summon_captain_planet# code an argument here
